@@ -6,14 +6,14 @@
     <title>chat</title>
     <link rel="stylesheet" type="text/css" href="./style/style.css">
 </head>
-<body>
+<body onload="handleBlur()">
     <div class="boxEserno" id="nicknameSection">
         <div class="boxInterno">
             <div id="nickname-container">
                 <label for="Nickname">Nickname: </label>
-                <input type="text" id="Nickname" name="Nickname" value=""><br>
+                <input type="text" id="Nickname" name="Nickname" value="" onfocus="handleFocus()" onblur="handleBlur()"><br>
                 <br>
-                <input type="button" name="invia" value="Inserisci Nickname" onclick="setNickname()">
+                <input type="button" name="invia" value="" onclick="setNickname()">
             </div>
         </div>
     </div>

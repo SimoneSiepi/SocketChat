@@ -1,3 +1,19 @@
+
+function handleFocus() {
+    var nicknameInput = document.getElementById("Nickname");
+    if (nicknameInput.value === "Inserisci Nickname") {
+        nicknameInput.value="";
+        nicknameInput.style.color = "black"; // Cambia il colore del testo quando inizia a scrivere
+    }
+}
+
+function handleBlur() {
+    var nicknameInput = document.getElementById("Nickname");
+    if (nicknameInput.value === "") {
+        nicknameInput.value = "Inserisci Nickname";
+        nicknameInput.style.color = "gray"; // Ripristina il colore del testo sbiadito quando non è in focus
+    }
+}
 function setNickname() {
     var nicknameInput = document.getElementById("Nickname");
     var nickname = nicknameInput.value.trim();
