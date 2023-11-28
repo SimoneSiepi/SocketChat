@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+</head>
+<body>
+    <div class="boxEserno" id="nicknameSection">
+        <div class="boxInterno">
+            <div id="nickname-container">
+                <label for="Nickname">Nickname: </label>
+                <input type="text" id="Nickname" name="Nickname" value=""><br>
+                <br>
+                <input type="button" name="invia" value="Inserisci Nickname" onclick="setNickname()">
+            </div>
+        </div>
+    </div>
+
+    <div class="boxEserno" id="chatSection" style="display: none;">
+        <div class="boxInterno">
+            <div class="chatContainer">
+                  <div class="chatBox">
+                    <textarea name="chat" id="chat" rows="10"></textarea>
+                    <div class="write">
+                        <input type="text" class="tname" name="tname" value=""><br>
+                        <div class="buttons">
+                            <div class="sendButton"><input type="button" value="invia" id="invia" name="invia"></div>
+                            <div class="endButton"><input type="button" value="fine" id="fine" name="fine"></div>
+                        </div>
+                    </div>
+                    <div class="User"></div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <footer><p>pagina creata da simone siepi insieme al suo compagno aleandro fernandes IV</p></footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
